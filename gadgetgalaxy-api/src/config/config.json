@@ -1,0 +1,39 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "password123",
+    "database": "gadgetgalaxy_dev",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5433,  
+    "logging": true,  
+    "dialectOptions": {
+      "ssl": false 
+    }
+  },
+  "test": {
+    "username": "postgres",
+    "password": "password123",
+    "database": "gadgetgalaxy_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5433,
+    "logging": false,
+    "dialectOptions": {
+      "ssl": false
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "password123",
+    "database": "gadgetgalaxy_prod",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5433,
+    "logging": false,
+    "dialectOptions": {
+      "ssl": true,  
+      "rejectUnauthorized": false 
+    }
+  }
+}

@@ -1,0 +1,56 @@
+gadgetgalaxy-api/
+│
+├── docker/
+│   ├── Dockerfile                # Dockerfile for the Node.js application
+│   └── docker-compose.yml        # Docker Compose file for services
+│
+├── src/
+│   ├── config/
+│   │   ├── config.js             # Configuration file for environment variables
+│   │   └── database.js           # Database configuration for Sequelize
+│   │
+│   ├── controllers/              # Controller files for handling requests
+│   │   ├── userController.js
+│   │   ├── productController.js
+│   │   ├── orderController.js
+│   │   └── reviewController.js
+│   │
+│   ├── middlewares/              # Middleware functions
+│   │   ├── authMiddleware.js
+│   │   ├── errorMiddleware.js
+│   │   └── loggingMiddleware.js
+│   │
+│   ├── models/                   # Sequelize models
+│   │   ├── user.js
+│   │   ├── product.js
+│   │   ├── order.js
+│   │   └── review.js
+│   │
+│   ├── routes/                   # Route definitions
+│   │   ├── userRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── orderRoutes.js
+│   │   └── reviewRoutes.js
+│   │
+│   ├── services/                 # Service layer for business logic
+│   │   ├── userService.js
+│   │   ├── productService.js
+│   │   ├── orderService.js
+│   │   └── reviewService.js
+│   │
+│   ├── utils/                    # Utility functions and helpers
+│   │   ├── cache.js              # Redis caching utility
+│   │   ├── logger.js             # Winston logging utility
+│   │   └── websocket.js          # WebSocket setup and handlers
+│   │
+│   ├── app.js                    # Express App
+│   └── server.js                 # Server configuration
+│
+├── .env                          # Environment variables
+├── .gitignore                    # Git ignore file
+├── README.md                     # Project README file
+├── package.json                  # NPM package file
+├── package-lock.json             # NPM lock file
+└── PROJECTSTRUCTURE.txt          # Project structure file
+
+
