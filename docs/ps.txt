@@ -1,4 +1,4 @@
-gadgetgalaxy-api/
+gadgetgalaxy/
 │
 ├── docker/
 │   ├── Dockerfile                # Dockerfile for the Node.js application
@@ -6,8 +6,9 @@ gadgetgalaxy-api/
 │
 ├── src/
 │   ├── config/
-│   │   ├── config.js             # Configuration file for environment variables
+│   │   ├── confenv.js            # Configuration file for environment variables
 │   │   └── database.js           # Database configuration for Sequelize
+|   |   └── config.json           # Postsql connection variables for sequelize       
 │   │
 │   ├── controllers/              # Controller files for handling requests
 │   │   ├── userController.js
@@ -21,10 +22,18 @@ gadgetgalaxy-api/
 │   │   └── loggingMiddleware.js
 │   │
 │   ├── models/                   # Sequelize models
+│   │   ├── index.js              # Sequelize models index file
 │   │   ├── user.js
 │   │   ├── product.js
 │   │   ├── order.js
 │   │   └── review.js
+│   │
+│   ├── migrations/               # Sequelize migration files
+│   │   ├── 20230701000000-create-user.js
+│   │   ├── 20230701000100-create-product.js
+│   │   ├── 20230701000200-create-order.js
+│   │   ├── 20230701000300-create-review.js
+│   │   └── 20230701000400-create-order-products.js
 │   │
 │   ├── routes/                   # Route definitions
 │   │   ├── userRoutes.js
@@ -43,14 +52,13 @@ gadgetgalaxy-api/
 │   │   ├── logger.js             # Winston logging utility
 │   │   └── websocket.js          # WebSocket setup and handlers
 │   │
-│   ├── app.js                    # Express App
-│   └── server.js                 # Server configuration
+│   ├── index.js                  # Entry point for the application
+│   └── server.js                 # Express app setup and configuration
 │
 ├── .env                          # Environment variables
 ├── .gitignore                    # Git ignore file
 ├── README.md                     # Project README file
+├── SEQUELIZE_COMMANDS.md         # Sequelize commands file
 ├── package.json                  # NPM package file
 ├── package-lock.json             # NPM lock file
 └── PROJECTSTRUCTURE.txt          # Project structure file
-
-

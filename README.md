@@ -55,7 +55,7 @@ GadgetGalaxy is a modern e-commerce platform specializing in electronic gadgets.
 - **Database**:
   - PostgreSQL
 
-- **Frontend** (suggestion):
+- **Frontend** (suggestion if someone wants to build it):
   - React
   - Redux
 
