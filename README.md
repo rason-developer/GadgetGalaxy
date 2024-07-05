@@ -73,7 +73,7 @@ GadgetGalaxy is a modern e-commerce platform specializing in electronic gadgets.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/gadgetgalaxy.git
+   git clone https://github.com/rason-developer/GadgetGalaxy
    cd gadgetgalaxy
    ```
 
